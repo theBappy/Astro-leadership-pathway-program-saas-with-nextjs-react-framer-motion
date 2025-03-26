@@ -91,14 +91,14 @@ const TestimonialsColumn = (props: {
       repeatType: 'loop',
     }}
     className=
-      "flex flex-col gap-6 pb-6"
+      "flex flex-col gap-6 pb-6 "
   >
     {[...new Array(2)].fill(0).map((_, index) =>(
       <React.Fragment key={index}>
         {props.testimonials.map(({ text, imageSrc, name, username }, index) => (
           <div key={name || username || index} className="card">
             <div>{text}</div>
-            <div className="flex items-center gap-2 mt-5">
+            <div className="flex items-center gap-2 mt-5 ">
               <Image
                 src={imageSrc}
                 alt={name}
@@ -121,7 +121,7 @@ const TestimonialsColumn = (props: {
 
 const Testimonials = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-[#dee5fc]">
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center">

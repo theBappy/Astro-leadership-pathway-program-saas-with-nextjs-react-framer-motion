@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background-color: #dee5fc;
+}
+
 
 @layer components {
     .btn {
@@ -29,6 +33,6 @@
         @apply max-w-[540px] mx-auto;
     }
     .card {
-        @apply p-10 rounded-3xl border border-[#F1F1F1] shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
+        @apply p-10 rounded-3xl bg-white border border-[#F1F1F1] shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
     }
 }

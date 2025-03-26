@@ -16,7 +16,7 @@ const Hero = () => {
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150])
 
   return (
-    <section ref={heroRef} className='pt-8 pb-20 md:pt-20 md:pb-10 overflow-x-clip'>
+    <section ref={heroRef} className='pt-8 pb-20 md:pt-20 md:pb-10 bg-[#dee5fc] overflow-x-clip'>
       <div className="container">
         <div className="md:flex items-center">  
         <div className="md:w-[478px]">
